@@ -19,9 +19,10 @@ jobs:
 
     env:
       VERSION: ${{ github.sha }}
-      CONTAINER_REGISTRY: ${{ secrets.CONTAINER_REGISTRY }}
-      REGISTRY_UN: ${{ secrets.REGISTRY_UN }}
-      REGISTRY_PW: ${{ secrets.REGISTRY_PW  }}
+      ACR_NAME: ${{ secrets.ACR_NAME }}
+      ACR_UN: ${{ secrets.ACR_UN }}
+      ACR_PW: ${{ secrets.ACR_PW  }}
+      DATABASE_URL: ${ {secrets.DATABASE_URL }}
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE.
